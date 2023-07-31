@@ -65,3 +65,20 @@ else:
    print("\n\t\t\t\t\t\t\t\t\tFibonacci sequence: ")
    for i in range(nterms):
        print(recur_fibo(i),end=' ')
+
+
+
+
+def fibonacci(n):
+    series = [ ]
+    a, b = 0, 1
+    while len(series) < n:
+        series.append(a)
+        # print(a)
+        a, b = b, a + b
+        # print(a)
+    return series
+
+fibonacci_series = fibonacci(int(input('Enter the Term: ')))
+print()
+print("Fibonacci series:", fibonacci_series)
